@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LifeCycle></LifeCycle>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LifeCycle from './components/LifeCycle.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LifeCycle
   }
 }
 </script>
