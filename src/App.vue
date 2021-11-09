@@ -1,25 +1,26 @@
 <template>
   <div>
-    <router-link to="/hello"> hello </router-link>
+    <!-- <router-link to="/hello"> hello </router-link>
     <router-link to="/emit"> emit test </router-link>
     <router-view></router-view>
-    <!-- <PropsTest :obj="obj"></PropsTest>
+    <PropsTest :obj="obj"></PropsTest>
     <div v-bind:style="{ fontSize: postFontSize + 'em'}">
       <EmitTest :title="emitTitle" @enlarge-text="onEnlargeText"></EmitTest>
     </div> -->
+    <AxiosTest></AxiosTest>
   </div>
 </template>
 
 <script>
 // import PropsTest from './components/PropsTest.vue'
 // import EmitTest from './components/EmitTest.vue'
+import AxiosTest from './components/AxiosTest.vue'
 
 export default {
   name: 'App',
-  // components: {
-  //   PropsTest,
-  //   EmitTest
-  // },
+  components: {
+    AxiosTest
+  },
   data() {
     return {
       obj: {
