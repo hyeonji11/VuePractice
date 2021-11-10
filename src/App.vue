@@ -8,6 +8,7 @@
       <EmitTest :title="emitTitle" @enlarge-text="onEnlargeText"></EmitTest>
     </div> -->
     <AxiosTest></AxiosTest>
+    <DirectiveTest></DirectiveTest>
   </div>
 </template>
 
@@ -15,11 +16,13 @@
 // import PropsTest from './components/PropsTest.vue'
 // import EmitTest from './components/EmitTest.vue'
 import AxiosTest from './components/AxiosTest.vue'
+import DirectiveTest from './components/DirectiveTest.vue'
 
 export default {
   name: 'App',
   components: {
-    AxiosTest
+    AxiosTest,
+    DirectiveTest
   },
   data() {
     return {
